@@ -1,0 +1,16 @@
+[redis]
+password =
+host = 127.0.0.1
+port = 6379
+db = 5
+
+[rediscluster]
+startup_nodes =
+password =
+
+[rabbit]
+host =
+port =
+username =
+password =
+vhost =

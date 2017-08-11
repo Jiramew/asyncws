@@ -1,0 +1,15 @@
+.idea/
+*.pyc
+*.log
+*.txt
+.pypirc
+dist/
+build/
+build.sh
+*.tgz
+node_modules
+*~
+!.gitignore
+log/
+export_pack/
+static/build/bundle.js
