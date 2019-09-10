@@ -10,8 +10,7 @@ import pickle as compat_pickle
 import configparser as compat_configparser
 
 from pika.exceptions import ConnectionClosed
-
-DEFAULT_CONFIG_FILE = 'config'
+from async_bowl.constant import DEFAULT_CONFIG_FILE
 
 MAX_PRIORITY = 10
 

@@ -8,8 +8,7 @@ import async_bowl
 from async_bowl.wrapper_redis import RedisClusterProxy
 from async_bowl.item import Item
 from async_bowl.utils import has_http_policy
-
-DEFAULT_CONFIG_FILE = 'config'
+from async_bowl.constant import DEFAULT_CONFIG_FILE
 
 
 class Cache(object):

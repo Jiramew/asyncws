@@ -14,9 +14,7 @@ from mugen.session import Session
 from async_bowl.exceptions import UnknownCommand
 from async_bowl.models import make_queue, make_cache
 from async_bowl.adapter import Adapter, KILL_SIGNAL, KILL_TERM
-
-DEFAULT_CACHE_BACKEND = 'redis'
-DEFAULT_QUEUE_BACKEND = 'redis'
+from async_bowl.constant import DEFAULT_CACHE_BACKEND, DEFAULT_QUEUE_BACKEND
 
 
 class AsyncLoop:

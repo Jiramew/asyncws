@@ -6,9 +6,7 @@ import os
 from async_bowl.wrapper_redis import RedisProxy
 from async_bowl.wrapper_rabbitmq import RabbitMQProxy
 from async_bowl.exceptions import UnknownBackend
-
-DEFAULT_CONFIG_FILE = 'config'
-ASYNC_BOWL_NAMESPACES = 'ASYNC_BOWL'
+from async_bowl.constant import DEFAULT_CONFIG_FILE, ASYNC_BOWL_NAMESPACES
 
 
 class QueueInferface:

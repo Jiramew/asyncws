@@ -4,8 +4,6 @@ from __future__ import absolute_import
 import pickle
 import hashlib
 
-DEFAULT_ENCODING = 'utf-8'
-
 
 def has_http_policy(obj):
     if not isinstance(obj, str):
@@ -20,11 +18,11 @@ def has_http_policy(obj):
 def md5_string(string):
     if not isinstance(string, str):
         try:
-            string = string.decode(DEFAULT_ENCODING)
+            string = string.decode('utf-8')
         except Exception:
             raise TypeError('string must be unicode')
 
-    return hashlib.md5(string.encode(DEFAULT_ENCODING)).hexdigest()
+    return hashlib.md5(string.encode('utf-8')).hexdigest()
 
 
 def serialize_obj(obj):
